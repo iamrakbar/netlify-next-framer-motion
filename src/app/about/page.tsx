@@ -1,4 +1,11 @@
+import Link from "next/link";
+
 // `app/about/page.tsx` is the UI for the `/about` URL
 export default function Page() {
-    return <h1>Hello, About Page!</h1>
+    return (
+        <div className="flex items-center justify-center p-24 space-y-8">
+            <h1>Hello, This is About Page!</h1>
+            <Link href="/">Go to Index</Link>
+        </div>
+    )
 }
